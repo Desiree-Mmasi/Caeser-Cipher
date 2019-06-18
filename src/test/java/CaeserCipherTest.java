@@ -27,4 +27,21 @@ public class CaeserCipherTest {
         assertEquals("b", testCaesarCipher.isEncrypted());
 
     }
+    @Test
+    public void newCaesarCipher_replaceLetterByUsingKey_c(){
+        CaeserCipher testCaesarCipher = new CaeserCipher("a",2);
+        assertEquals("c",testCaesarCipher.isActuallyEncrypted("a",2));
+    }
+
+    @Test
+    public void newCaesarCipher_replaceMultipleLettersByUsingKey_cde(){
+        CaeserCipher testCaesarCipher = new CaeserCipher("abc",2);
+        assertEquals("cde",testCaesarCipher.isActuallyEncrypted("abc",2));
+    }
+
+    @Test
+    public void newCaesarCipher_decryptAStringUsingAKey_abc(){
+        CaeserCipher testCaesarCipher = new CaeserCipher("cde",2);
+        assertEquals("abc",testCaesarCipher.toDecrypt("cde",2));
+    }
 }
