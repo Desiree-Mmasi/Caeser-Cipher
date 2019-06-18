@@ -44,4 +44,15 @@ public class CaeserCipherTest {
         CaeserCipher testCaesarCipher = new CaeserCipher("cde",2);
         assertEquals("abc",testCaesarCipher.toDecrypt("cde",2));
     }
+    @Test
+    public void newCaesarCipher_encryptAStringUsingAKey_ab(){
+        CaeserCipher testCaesarCipher = new CaeserCipher("yz",2);
+        assertEquals("ab",testCaesarCipher.isActuallyEncrypted("yz",2));
+    }
+
+    @Test
+    public void newCaesarCipher_decryptAStringUsingAKey_yz(){
+        CaeserCipher testCaesarCipher = new CaeserCipher("ab",2);
+        assertEquals("yz",testCaesarCipher.toDecrypt("ab",2));
+    }
 }
