@@ -51,5 +51,31 @@ public class CaeserCipher {
         return result;
     }
 
+    public  String toDecrypt(String statement, int key) {
+        String result = "";
+        StringBuffer decrypted = new StringBuffer();
+
+
+        for (int i = 0; i < statement.length(); i++) {
+            int decrypt = statement.charAt(i);
+
+
+
+            if((decrypt - key > 71) && (decrypt - key < 97) )  {
+                char decrypts = (char) (decrypt + 26 - key);
+                decrypted.append(decrypts);
+            }
+            else {
+                char decrypts = (char) (decrypt - (key % 26));
+                decrypted.append(decrypts);
+
+            }
+
+
+
+        }
+        result += decrypted;
+        return result;
+    }
 
 }
