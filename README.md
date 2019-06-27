@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Step 1: Download Intellij from https://www.jetbrains.com/idea/download/#section=linux
 
-Step 2: Visit my GitHub repository; User name Mbugua Mwaura and clone the following link: https://github.com/MbuguaMwaura/Commard-Line-Caesar-Cipher You can also download the files into you folder and unzip it to access the files.
+Step 2: Visit my GitHub repository; User name Mbugua Mwaura and clone the following link: https://github.com/DesireeMmasi/Caesar-Cipher You can also download the files into you folder and unzip it to access the files.
 
 Step 3: Open the project with Intellij.
 
